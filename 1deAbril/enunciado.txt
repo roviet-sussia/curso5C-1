@@ -12,14 +12,16 @@
 
    Cada trabajo deberá contener todos los archivos necesarios para su compilación.
 
-3) Transformar en una clase, los siguientes ejercicios (realizados el 18 de Marzo) con los atributos y métodos (getters, setters, etc.) que consideren necesarios. 
+3) Transformar en una clase, los siguientes ejercicios (realizados el 18 de Marzo) con los 
+   atributos y métodos (getters, setters, etc.) que consideren necesarios. 
    
    ejercicio7, será clase Mcm
    ejercicio12, será clase Factorial
 
    Ver el ejemplo contenido en la carpeta llamada "Ejemplo".
 
-4) Probar la correcta funcionalidad de las funciones nombradas a 					 	continuación creando casos de test para cada una de ellas. 
+4) Probar la correcta funcionalidad de las funciones nombradas a continuación creando casos 
+   de test para cada una de ellas. 
 
 
    Funciones de la clase del 13 de Marzo:
@@ -54,7 +56,8 @@
 
    Se asume que el usuario puede ingresar cualquier valor de parámetro.
 
-   
+
+
    Modelo para realizar un caso de test:
 
    en Java:
