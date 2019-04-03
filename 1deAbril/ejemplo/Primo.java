@@ -51,6 +51,7 @@ public class Primo{
 		}
 	}
 
+	//Método extra
 	public boolean esPar(){
 		return (numeroAEvaluar % 2 == 0);
 	}
