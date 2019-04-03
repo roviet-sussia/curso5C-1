@@ -1,0 +1,89 @@
+
+1) Mejorar la escritura del código de todos los trabajos anteriores.
+   Tener en cuenta la declaratividad de variables y funciones, la indentación 
+   y prolijidad. 
+
+2) Todos los trabajos deben compilar.
+   Crear una carpeta por separado para cada trabajo con los siguientes nombres:
+   
+   ejercicios de c++ con vector:                 ejercicios1
+   ejercicios de java (18 de Marzo):             ejercicios2
+   ejercicios de java (25 de Marzo):             ejercicios3
+
+   Cada trabajo deberá contener todos los archivos necesarios para su compilación.
+
+3) Transformar en una clase, los siguientes ejercicios (realizados el 18 de Marzo) con los atributos y métodos (getters, setters, etc.) que consideren necesarios. 
+   
+   ejercicio7, será clase Mcm
+   ejercicio12, será clase Factorial
+
+   Ver el ejemplo contenido en la carpeta llamada "Ejemplo".
+
+4) Probar la correcta funcionalidad de las funciones nombradas a 					 	continuación creando casos de test para cada una de ellas. 
+
+
+   Funciones de la clase del 13 de Marzo:
+
+   int elMenorElemento(vector<int> unVector);
+   bool tieneDosElementosPares(vector<int> unVector);
+   int sumaDeLosDosElementosMasChicos(vector<int> unVector);
+   void mostrarVector(vector<int> unVector);
+
+   Los casos de test deberán estar en el archivo main.cpp.
+
+
+   Clases creadas en el punto anterior:
+
+   clase Mcm
+   clase Factorial
+
+
+   Clases de la clase del 25 de Marzo:
+
+   clase Persona
+   clase Horario
+   clase Fecha
+   clase Cine
+   
+
+
+   Deberá haber un archivo llamado "TestsClase.java" por clase creada y deberán estar
+   en el mismo directorio.
+
+   No usar operador "cin". No usar la clase Scanner. 
+
+   Se asume que el usuario puede ingresar cualquier valor de parámetro.
+
+   
+   Modelo para realizar un caso de test:
+
+   en Java:
+
+   System.out.print("TEST nombreDeFuncion. Caso nombreDeCaso. ");
+   tipoDeVariable nombreVar1 = valorEsperadoDeLaFunción;
+   tipoDeVariable nombreVar2 = nombreDeFuncion(argumento));
+   System.out.println((nombreVar1==nombreVar2)?"Pasó el test.":"No pasó el test.");
+
+   en c++:
+
+   printf("TEST nombreDeFuncion. Caso nombreDeCaso.");
+   tipoDeVariable nombreVar1 = valorEsperadoDeLaFunción;
+   tipoDeVariable nombreVar2 = nombreDeFuncion(argumento));
+   if(nombreVar1==nombreVar2){printf("Pasó el test\n");}else{printf("No pasó el test\n");};
+
+
+
+Entrega:
+
+   Comprimir los tres directorios. Colocarle como nombre los apellidos de los alumnos que participaron.
+
+   Ejemplo: Apellido1-Apellido2.
+
+   mail: nadia.matiascolque@ipm.edu.ar
+   
+ 
+
+
+
+
+
