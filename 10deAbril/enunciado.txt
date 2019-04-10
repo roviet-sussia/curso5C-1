@@ -1,0 +1,21 @@
+
+1. Realice un algoritmo para cargar por teclado los elementos de un arreglo de enteros y que imprima por pantalla los valores de dicho arreglo sin repetir.
+Por ejemplo: Si el arreglo ingresado es {2, 5, 3, 4, 5, 0, 5, 40,4} debe imprimir 3, 4, 5, 0 y 40. No importa el orden en que se impriman los valores pero sí importa que no haya resultados repetidos.
+
+2. Crear una clase que represente a un alumno de una escuela. Los atributos que debe  tener el alumno son:
+    a) Nombre
+    b) Apellido
+    c) Fecha de nacimiento
+    d) Lista de notas
+
+	Se deben crear los métodos:
+
+    a) Set Nombre
+    b) Set Apellido
+    c) Set Fecha Nacimiento
+    d) Menor Nota
+    e) Mayor Nota
+    f) Promedio Notas
+
+En caso de considerar necesario crear otro método, puede crearlo.
+
