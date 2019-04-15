@@ -1,5 +1,3 @@
-
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -15,9 +13,6 @@ public class Main {
 		int[] arrayA = new int[] {2,3};
 		
 
-        
-
-		
 		boolean[] arreglo3 = new boolean[0];
 		boolean[] arrayC = new boolean[2];
 		// si no lo inicializamos, en cada posición tendrá al booleano false.
