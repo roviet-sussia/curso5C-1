@@ -1,0 +1,50 @@
+
+
+1) Crear una clase que represente a un alumno de una escuela. Los atributos que debe tener el alumno son:
+    a) Nombre
+    b) Apellido
+    c) Fecha de nacimiento
+    d) Lista de notas
+
+Se deben crear los métodos:
+a) Set Nombre
+b) Set Apellido
+c) Set Fecha Nacimiento
+d) Agregar Nota
+e) Menor Nota
+f) Mayor Nota
+g) Promedio Notas
+
+
+2) Tomar el ejercicio anterior incorporando un atributo a la clase alumno llamado materias (lista de Materia), siendo Materia una nueva clase que deberá tener los siguientes atributos:
+a) Nombre
+b) Lista de notas
+
+Analizar cómo y dónde crear los métodos:
+a) Agregar Materia
+b) Agregar Nota
+c) Promedio notas materia
+d) Set Apellido
+e) Set Fecha Nacimiento
+f) Menor Nota
+g) Promedio notas alumno
+h) Menor Promedio
+i) Mayor Promedio
+
+3) Realizar un sistema que controle la asistencia de un empleado a su trabajo. El empleado debe tener un nombre, apellido, teléfono, fecha de nacimiento y qué días de lunes a viernes debe asistir. 
+
+Cada empleado tiene una lista de asistencias, esto quiere decir que cuando el empleado ingresa a la empresa, se registra y dicho registro ingresa a una lista conteniendo la fecha y hora de ingreso.
+
+El empleado debe tener una forma de comprobar el porcentaje de asistencia en un mes en particular.
+
+Los empleados deben pertenecer a una empresa y se debe tener la posibilidad de extraer el porcentaje de asistencia del total en un mes de empleados de la empresa.
+
+5) Realizar un sistema que administre un listado de álbumes. Cada álbum tiene un título y una lista de canciones. Cada canción tiene como dato un título, una lista de artistas y una lista de autores.
+
+Los artistas y los autores son personas de las cuales se almacena su nombre, apellido y fecha de nacimiento. Para los autores se debe almacenar su nacionalidad.
+
+Debe existir un método que devuelva el listado completo artistas que participaron en un álbum y otro que devuelva el artista más influyente (con más canciones) de un álbum. 
+	
+Debe existir un método que devuelva un listado completo de canciones escritas por autores de una nacionalidad ingresada. 
+
+ 
