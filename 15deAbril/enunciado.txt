@@ -1,50 +1,50 @@
 
 
-1) Crear una clase que represente a un alumno de una escuela. Los atributos que debe tener el alumno son:
-    a) Nombre
-    b) Apellido
-    c) Fecha de nacimiento
-    d) Lista de notas
+1) Un registro de clases es un libro que sirve para anotar a mano los temas vistos por materia teniendo en cuenta el día, mes, unidad del programa, número de clase, tema visto y firma del docente. 
 
-Se deben crear los métodos:
-a) Set Nombre
-b) Set Apellido
-c) Set Fecha Nacimiento
-d) Agregar Nota
-e) Menor Nota
-f) Mayor Nota
-g) Promedio Notas
+Se requiere crear un sistema que reemplace a tal libro.
+
+Ignorar la firma del docente.
 
 
-2) Tomar el ejercicio anterior incorporando un atributo a la clase alumno llamado materias (lista de Materia), siendo Materia una nueva clase que deberá tener los siguientes atributos:
-a) Nombre
-b) Lista de notas
 
-Analizar cómo y dónde crear los métodos:
-a) Agregar Materia
-b) Agregar Nota
-c) Promedio notas materia
-d) Set Apellido
-e) Set Fecha Nacimiento
-f) Menor Nota
-g) Promedio notas alumno
-h) Menor Promedio
-i) Mayor Promedio
 
-3) Realizar un sistema que controle la asistencia de un empleado a su trabajo. El empleado debe tener un nombre, apellido, teléfono, fecha de nacimiento y qué días de lunes a viernes debe asistir. 
+2) Crear una sistema que permita cargar las asistencias e inasistencias de los alumnos de un curso a lo largo de todo el año.
 
-Cada empleado tiene una lista de asistencias, esto quiere decir que cuando el empleado ingresa a la empresa, se registra y dicho registro ingresa a una lista conteniendo la fecha y hora de ingreso.
+El sistema, deberá poder decirme quién fué el alumno que faltó más, 
+quién faltó menos, y devolverme una lista de los alumnos que se quedaron libres.
 
-El empleado debe tener una forma de comprobar el porcentaje de asistencia en un mes en particular.
+Para ello, se deberá crear las siguientes clases:
 
-Los empleados deben pertenecer a una empresa y se debe tener la posibilidad de extraer el porcentaje de asistencia del total en un mes de empleados de la empresa.
+a) clase Registro de asistencias con los atributos: lista de alumnos, curso y especialidad.
 
-5) Realizar un sistema que administre un listado de álbumes. Cada álbum tiene un título y una lista de canciones. Cada canción tiene como dato un título, una lista de artistas y una lista de autores.
+b) clase Alumno con los atributos: nombre, apellido, lista de asistencias (será una
+lista de enteros, donde el número 1 significará que está presente y el número cero significará que faltó).
 
-Los artistas y los autores son personas de las cuales se almacena su nombre, apellido y fecha de nacimiento. Para los autores se debe almacenar su nacionalidad.
 
-Debe existir un método que devuelva el listado completo artistas que participaron en un álbum y otro que devuelva el artista más influyente (con más canciones) de un álbum. 
+
+
+3) Crear un sistema que nos permita agregar notas por alumno de una materia a lo largo del año.
+
+Para ello, crear las clases:
+
+Materia, con los atributos	
 	
-Debe existir un método que devuelva un listado completo de canciones escritas por autores de una nacionalidad ingresada. 
+	Nombre de materia
+	Lista de alumnos
+	Curso
+	Horarios de cursada 
+	Dias de cursada
 
- 
+Alumno, con los atributos
+	
+	Lista de notas
+	Nombre
+	Apellido
+
+El docente que hará uso de tal sistema, también deberá poder obtener un 
+promedio de notas por alumno para colocar la calificación final a fin de año.
+
+
+Proponer e implementar los métodos que se consideren necesarios para poder
+cumplir con lo pedido en cada ejercicio.
