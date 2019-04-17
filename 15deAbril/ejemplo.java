@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 
 
@@ -25,20 +24,14 @@ public class ejemplo{
 
 		System.out.println(a.size());
 
-		
-
 		// Añade el elemento al ArrayList en la posición 1
-		a.add(1, "Elemento 2");
+		a.add(1, "Elemento");
 
-
-		
 		// Devuelve el elemento que esta en la posición '2' del ArrayList
 		a.get(2);
 
-
 		// Comprueba se existe del elemento ('Elemento') que se le pasa como parametro
 		a.contains("Elemento");
-
 
 		// Borra el elemento de la posición '1' del ArrayList   
         a.remove(1); 
@@ -52,8 +45,11 @@ public class ejemplo{
 		a.isEmpty(); 
 
 
-
-
+		// Devuelve el índice de la primera aparición del número 1 en el ArrayList
+        a.indexOf(1);
+        
+        // Devuelve el índice de la última aparición del número 1 en el ArrayList   
+        a.lastIndexOf(1);
 
 		/*
 
