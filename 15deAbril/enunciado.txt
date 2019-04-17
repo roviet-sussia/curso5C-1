@@ -9,7 +9,7 @@ Ignorar la firma del docente.
 
 
 
-2) Crear una sistema que permita cargar las asistencias e inasistencias de los alumnos de un curso a lo largo de todo el año.
+2) Crear un sistema que permita cargar las asistencias e inasistencias de los alumnos de un curso a lo largo de todo el año.
 
 El sistema, deberá poder decirme quién fué el alumno que faltó más, 
 quién faltó menos, y devolverme una lista de los alumnos que se quedaron libres.
