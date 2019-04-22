@@ -12,7 +12,8 @@ Pediatría, 28 turnos, 2 médicos.
 Cardiología, 39 turnos, 3 médicos.
 Medicina Clínica, 34 turnos, 2 médicos.
 
-La información requerida para entregar un turno es: nombre y apellido del paciente y especialidad del turno solicitado. El programa le asignará un número de turno y quedará guardado como dato del paciente.
+La información requerida para entregar un turno es: nombre y apellido del paciente y especialidad del turno solicitado. 
+El programa le asignará un número de turno y quedará guardado como dato del paciente.
 
 En las especialidades donde hay más de un médico, la cantidad
 de pacientes correspondientes se reparten en cantidades iguales
