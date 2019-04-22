@@ -1,12 +1,23 @@
 
-
 1) Un registro de clases es un libro que sirve para anotar a mano los temas vistos por materia teniendo en cuenta el día, mes, unidad del programa, número de clase, tema visto y firma del docente. 
 
 Se requiere crear un sistema que reemplace a tal libro.
 
+clase LibroRegistro
+	atributos: lista de Materias, curso
+		
+clase Materia
+	atributos: lista de clasesVistas, profesor, horario
+
+clase "clasesVistas"
+	atributos: temaVisto (string), día, mes, número de clase.
+			
+El sistema debe permitir ingresar la información de cada clase que pasa, es decir,
+que el arreglo de de "clasesvistas" debe ser dinámico. 
+
+la lista de materias, debe ser estático. También puede ser dinámico.
+
 Ignorar la firma del docente.
-
-
 
 
 2) Crear un sistema que permita cargar las asistencias e inasistencias de los alumnos de un curso a lo largo de todo el año.
@@ -20,9 +31,6 @@ a) clase Registro de asistencias con los atributos: lista de alumnos, curso y es
 
 b) clase Alumno con los atributos: nombre, apellido, lista de asistencias (será una
 lista de enteros, donde el número 1 significará que está presente y el número cero significará que faltó).
-
-
-
 
 3) Crear un sistema que nos permita agregar notas por alumno de una materia a lo largo del año.
 
