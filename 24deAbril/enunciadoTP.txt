@@ -7,7 +7,7 @@ El programa deberá servir para:
 
 *) Guardar un registro diario de los pedidos tomados por los mozos.
 *) Consultar el número de mesa correspondiente a un plato.
-*) Consultar el número de pedido correspondiente un tipo de plato.
+*) Consultar el número de pedido correspondiente a un tipo de plato.
 
 (si se piden dos platos del mismo tipo en una misma mesa, el objeto
 plato tendrá asociado sólo un número de pedido)
@@ -88,18 +88,16 @@ se debe vaciar. No sucede con la lista de pedidos del restaurane pues se usará 
 Se deben proponer y programar las clases necesarias para cumplir con lo 
 pedido. 
 
-Se pueden usar todas las herramientas usadas en clase.
-
 Se deben testear los métodos creando casos de tests y colocarlos 
 en un archivo llamanos Main.java
 
-Para ello, usar el siguiente fragmento de código (se debe reemplazar
-por cada tipo de variable):
+Para ello, usar el siguiente fragmento de código:
 
    System.out.print("TEST nombreDeFuncion. Caso nombreDeCaso. ");
    tipoDeVariable nombreVar1 = valorEsperadoDeLaFunción;
    tipoDeVariable nombreVar2 = nombreDeFuncion(argumento);
    System.out.println((nombreVar1==nombreVar2)?"Pasó el test.":"No pasó el test.");
+   
 
 Todo debe compilar, los nombres de las variables deben ser declarativos y
 todo debe estar bien indentado.
