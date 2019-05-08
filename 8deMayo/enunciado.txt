@@ -54,7 +54,7 @@ ejemplo:
 	la pila se encuentra vacía
 	las variables de la calculadora, tiene a: 
 	x con valor 7 (en el tope)
-    y con valor 32
+        y con valor 32
 	se ejecuta la instrucción read(y). Entonces, la pila
 	ahora contendrá el valor 32.
 
