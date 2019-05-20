@@ -58,7 +58,7 @@ En las otras clases:
 
 	Pensar qué otras partes se podrían testear. 
 	El propósito es lograr detectar la mayor cantidad de errores que pueda
-	tener la calculadora para después arreglarlos.
+	tener la calculadora.
 
 ----------------------------------------------------------------------------------
 
