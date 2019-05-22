@@ -14,5 +14,6 @@ ni experimentos avanzados, no es posible iniciar un nuevo experimento. Además, 
 Un experimento es consistente con la hipótesis si la mayoría de las observaciones legítimas correspondientes a ese experimento confirman la hipótesis.
 
 Crear todas las clases que se consideren necesarias para programar el sistema pedido.
+Puede usar la clase Scanner.
 
 
