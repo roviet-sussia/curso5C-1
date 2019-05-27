@@ -1,0 +1,47 @@
+
+Resolver los siguientes ejercicios:
+
+Nota: Recordar que cada clase es una representación de algo.
+	  Ejemplo: la clase Persona, representa al conjunto de personas con
+	  los aspectos y comportamientos de la misma que consideramos importantes/necesarios.
+      Si es importante conocer sólo la edad de una persona, no es necesario colocar
+      el nombre de la misma como atributo.
+	  Recordar también que cuando hacemos Persona p1 = new Persona(); 
+	  estamos creando un elemento de ese conjunto de personas. 
+
+1) Representar una habitación. 
+   En éste caso, nos interesará el peso, color y material (con el que está hecho) 
+   de cada elemento presente.
+   Mesa, silla, ventana, cama, etc.
+   Elegir 9 elementos.
+   Colocar ésta resolución en una carpeta llamada "habitacion".
+
+2) Representar una mochila con útiles escolares.
+   En éste caso, nos interesará el precio y marca de cada elemento.
+   Colocar ésta resolución en una carpeta llamada "mochila"
+
+3) Representar dos personajes a elección.
+   Colocar ésta resolución en una carpeta llamada "personajes"
+
+4) Representar el aula de clases (incluir alumnos, computadoras, etc )
+   Elegir 5 elementos.
+   Colocar ésta resolución en una carpeta llamada "aula"
+
+5) Representar al conjunto de jugadores de futbol para luego
+   obtener a los jugadores cuyas camisetas tienen números impares.
+
+6) Crear una clase que nos permita saber cuántas materias dicta cada
+   profesor del instituto. Utilizar sólo un atributo.
+
+7) Sea una lista de invitados, se necesita saber cuántos de ellos
+   son personas cuyos nombres empiezan con la letra A.
+   Crear una clase que nos permita obtener dicha información.
+
+8) Sea un zoológico, se necesita obtener los nombres de todos
+   aquellos animales presentes en el mismo que son hervíboros.
+
+9) Crear una clase que nos permitan saber cuántos alumnos del instituto 
+   son mayores de edad. Utilizar sólo un atributo.
+
+
+
