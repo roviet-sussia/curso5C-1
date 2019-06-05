@@ -1,0 +1,81 @@
+---------------------------------------------------------------------------
+PARTE A
+---------------------------------------------------------------------------
+
+Un inspector necesita chequear que un colectivo está en "orden".
+Se dice que un colectivo está en "orden" si se cumplen los siguientes
+requisitos:
+
+*)Que cada pasajero actual haya abonado el boleto correspondiente.
+*)Que cada pasajero actual no pase la cantidad de metros pagados.
+*)Que se le haya acplicado un descuento del 5o% al importe del pasaje de un
+usuario frecuente.
+
+Aclaraciones:
+
+El boleto tiene un importe de $0.50 por metro a recorrer.
+También se necesita saber cuáles de los pasajeros son usuarios frecuentes
+de la linea para realizarles el mencionado descuento.
+Se dice que un pasajero es un usuario frecuente si fué un pasajero
+anteriormente, al menos, 25 veces.
+
+Cada pasajero abonará su boleto mediante una tarjeta.
+Dicha tarjeta es de uso personal. Ésto quiere decir
+que cada pasajero abonará con su propia tarjeta y puede
+abonar sólo un boleto por viaje.
+
+Crear la/s clase/s necesaria/s para resolver el problema.
+Se deben incluir SÓLO los atributos y métodos necesarios.
+En caso de colocar atributos y/o métodos de más, se
+descontarán puntos.
+
+
+-------------------------------------------------------------------------
+PARTE B
+-------------------------------------------------------------------------
+
+En un supermercado se quiere llevar un registro de cierta información
+relacionada con los clientes que recibe y sus respectivas compras.
+
+Para ello, se pide que se creen dos clases: 
+	clase Cliente
+	clase Producto
+
+Las mismas deben servir para saber:
+
+*) Cuánto gastó cada cliente
+
+*) Si el cliente abonó en efectivo o no.
+
+*) Cuáles son todos productos que compró cada cliente
+ 
+*) Cantidad de unidades por producto.
+
+Las clases creadas serán usadas en una clase llamada Supermercado.
+Ésta clase realiza las siguientes cosas:
+
+	a) Saber cuántos clientes tuvo el supermercado al final del día.
+	(donde un ticket otorgado en caja es equivalente a un cliente).
+	b) Y saber cuál fué el ingreso total de dinero al final de día.
+
+Se pide que también creen la clase Supermercado.
+
+Se deben crear todos los casos de test que consideren necesarios.
+
+Utilizar la herramienta JUnit.
+
+--------------------------------------------------------------------------
+
+comentario1: cada ítem marcado con "*)", no corresponde a la
+implementación de un método (pueden ser más ó dos items 
+pueden ser cumplidos con un método). Varía según la forma
+de resolver el problema que se eligió.
+
+comentario2: recordar que si se usan float´s, los valores asignados a
+los mismos deben tener como terminación la letra "f" ó "F". 
+
+comentario3: recordar que se pueden usar métodos de una clase "X"
+dentro de métodos de la misma clase.
+
+
+--------------------------------------------------------------------------
