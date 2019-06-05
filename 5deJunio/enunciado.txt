@@ -1,3 +1,6 @@
+
+Crear la/s clase/s necesaria/s para resolver los siguientes problemas.
+
 ---------------------------------------------------------------------------
 PARTE A
 ---------------------------------------------------------------------------
@@ -24,12 +27,6 @@ Dicha tarjeta es de uso personal. Ésto quiere decir
 que cada pasajero abonará con su propia tarjeta y puede
 abonar sólo un boleto por viaje.
 
-Crear la/s clase/s necesaria/s para resolver el problema.
-Se deben incluir SÓLO los atributos y métodos necesarios.
-En caso de colocar atributos y/o métodos de más, se
-descontarán puntos.
-
-
 -------------------------------------------------------------------------
 PARTE B
 -------------------------------------------------------------------------
@@ -51,14 +48,13 @@ Las mismas deben servir para saber:
  
 *) Cantidad de unidades por producto.
 
-Las clases creadas serán usadas en una clase llamada Supermercado.
-Ésta clase realiza las siguientes cosas:
+Clase Supermercado:
 
-	a) Saber cuántos clientes tuvo el supermercado al final del día.
-	(donde un ticket otorgado en caja es equivalente a un cliente).
-	b) Y saber cuál fué el ingreso total de dinero al final de día.
+*) Saber cuántos clientes tuvo el supermercado al final del día.
+	(donde un ticket otorgado en caja es equivalente a un cliente)
+*) Y saber cuál fué el ingreso total de dinero al final de día.
 
-Se pide que también creen la clase Supermercado.
+--------------------------------------------------------------------------
 
 Se deben crear todos los casos de test que consideren necesarios.
 
