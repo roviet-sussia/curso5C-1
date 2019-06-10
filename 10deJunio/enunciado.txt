@@ -1,0 +1,28 @@
+----------------------------------------------------------
+Recordar:
+
+modificadores de acceso sobre átributos, métodos.
+
+		  misma   clase de    subclase de   clase de
+		  clase   mismo pkg    otro pkg      otro pkg
+public 		x         x           x             x
+protected	x         x           x             
+default 	x         x          ~x*
+private 	x 
+
+~x* una subclase puede acceder a los atributos y
+métodos default de la clase madre sólo si ambos están 
+en el mismo paquete.
+-----------------------------------------------------------
+
+1) Clasifique y organice las carpetas creadas en la clase anterior al exámen
+usando la palabra package en el encabezado de cada archivo. 
+
+2) Codifique una clase base con un único constructor que no sea por defecto (tenga parámetros) y luego una clase derivada de esta que tenga dos constructores, uno con argumentos y otro sin. En la clase derivada llame al constructor de su súper clase.
+
+3) Diseñe una jerarquía de clases para los conceptos de Bicicleta, MontainBike y Playera. En la raíz de la jerarquía defina un método imprimirAtributos que muestre por consola los atributos de lo que es una bicicleta.
+En las subclases redefina el método imprimirAtributos de forma tal que se impriman los atributos base que hereda y además los que adicionan, para esto reutilice el método imprimirAtributos definido en la clase base mediante el uso de la cláusula super().
+
+4) Proponga e implemente una nueva clase que descienda de tres clases a
+elección que estén en alguno de los paquetes creados en el punto 1.
+(colóquelas en nuevos paquetes)
