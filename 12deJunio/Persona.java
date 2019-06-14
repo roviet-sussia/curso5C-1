@@ -1,4 +1,3 @@
-
 public class Persona {
 
     private String nombre;
@@ -6,17 +5,20 @@ public class Persona {
     protected int dni;
 
     public Persona(){
-        this("Juan");
+
     }
 
     public Persona(int edad){
         this("Carolina");
-        this.edad = edad;
+        this.edad = e dad;
     }
+
+
     public Persona(String nombre){
         this.nombre = nombre;
         this.edad = 56;
         this.dni = 12345678;
+
     }
 
     public void setEdad(int edad){

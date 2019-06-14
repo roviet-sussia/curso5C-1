@@ -1,5 +1,3 @@
-
-
 public class Empleado extends Persona {
 
     private String ocupacion;
@@ -13,8 +11,9 @@ public class Empleado extends Persona {
         this.ocupacion = "ingeniero";
     }
 
-    public boolean puedeVotar(){
+    public boolean puedeVotar(){ 
     	return super.esMayorDeEdad();
+
     }
 
     public static void main(String[] args){

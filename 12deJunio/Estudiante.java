@@ -1,11 +1,10 @@
-
 public class Estudiante extends Persona{
 
     private String curso;
 
   
     public Estudiante(){
-        super(13);
+       super("Fabiana");
        this.curso = "5°C";
     }
    

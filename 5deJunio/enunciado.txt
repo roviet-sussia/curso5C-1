@@ -1,9 +1,4 @@
 
-Crear la/s clase/s necesaria/s para resolver los siguientes problemas.
-
----------------------------------------------------------------------------
-PARTE A
----------------------------------------------------------------------------
 
 Un inspector necesita chequear que un colectivo está en "orden".
 Se dice que un colectivo está en "orden" si se cumplen los siguientes
@@ -26,33 +21,6 @@ Cada pasajero abonará su boleto mediante una tarjeta.
 Dicha tarjeta es de uso personal. Ésto quiere decir
 que cada pasajero abonará con su propia tarjeta y puede
 abonar sólo un boleto por viaje.
-
--------------------------------------------------------------------------
-PARTE B
--------------------------------------------------------------------------
-
-En un supermercado se quiere llevar un registro de cierta información
-relacionada con los clientes que recibe y sus respectivas compras.
-
-Para ello, se pide que se creen dos clases: 
-	clase Cliente
-	clase Producto
-
-Las mismas deben servir para saber:
-
-*) Cuánto gastó cada cliente
-
-*) Si el cliente abonó en efectivo o no.
-
-*) Cuáles son todos productos que compró cada cliente
- 
-*) Cantidad de unidades por producto.
-
-Clase Supermercado:
-
-*) Saber cuántos clientes tuvo el supermercado al final del día.
-	(donde un ticket otorgado en caja es equivalente a un cliente)
-*) Y saber cuál fué el ingreso total de dinero al final de día.
 
 --------------------------------------------------------------------------
 
