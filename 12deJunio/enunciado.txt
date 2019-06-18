@@ -44,7 +44,7 @@ Ej:
 
 Las 4 clases no deben tener constructores por defecto.
 Las subclases sí deben tener un constructor por defecto y también deben tener
-2 constructores que tengan parámetros. Usar la cláusula this().
+2 constructores que tengan parámetros. Usar la palabra reservada o cláusula this().
 
 b.3) Realizar lo pedido en el ítem b.1 con el punto 2.
 

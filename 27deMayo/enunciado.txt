@@ -9,6 +9,31 @@ Nota: recordar que cada clase es una representación de algo.
       Recordar también que cuando hacemos Persona p1 = new Persona(); 
       estamos creando un elemento de ese conjunto de personas. 
 
+A la hora de representar conjuntos de cosas reales con clases, es necesario tener en
+cuenta lo siguiente:
+
+Cuándo usamos un conjunto (HashSet)?
+Cuando no importa el orden de los elementos contenidos y
+tampoco hay elementos repetidos.
+Ejemplo: en el ejercicio 8, se debe devolver un conjunto con
+         nombres de animales. En el mismo no importa el orden
+         y no deben ser repetidos.
+
+
+Cuándo usamos una lista (ArrayList)?
+Cuando sí importa el orden de los elementos contenidos y
+sí pueden haber repetidos.
+Ejemplo: una fila de personas cuyo orden depende del orden
+          de llegada. El que llega primero está en el ĺugar 
+          correspondiente al índice 0, el que llega segundo, 
+          corresponde al índice 1, ..., etc.
+
+Cuándo usamos una asociación de valores (HashMap)?
+Cuando se debe asociar dos objetos de distinto o igual tipo.
+Ejemplo: para representar la memoria de la calculadora
+         donde se asociaba un string con un valor.
+
+
 1) Representar una habitación. 
    En éste caso, nos interesará el peso, color y material (con el que está hecho) de cada elemento presente.
    Mesa, silla, ventana, cama, etc.
