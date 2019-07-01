@@ -62,6 +62,14 @@ public class Ejemplo{
 		System.out.println(h1.get("nombreClaveUno"));
 		//retorna el valor asociado a la clave "nombreClaveUno"
 
+		//ejemplo para recorrer el hashMap:
+		for ( Map.Entry elemento : h1.entrySet() ) {
+			System.out.println(elemento);	
+			if(elemento.getKey() == "nombreClaveUno"){
+				System.out.println("el valor de nombreClaveUno es: " + elemento.getValue());
+			}
+		}
+
 		h1.put("cuaderno", 2);
 		h1.put("cuaderno", 3);
 		//al agregar una clave ya existente, reemplaza el valor asociado
@@ -96,6 +104,12 @@ public class Ejemplo{
 		palabras.add("computadora");
 		System.out.println(palabras);
 		//imprime: [casa, perro, computadora]
+
+		//para recorrer el HashSet
+
+		for (String elemento : palabras ) {
+			System.out.println(elemento);
+		}
 
 		palabras.isEmpty();//retorna true o false según si está vacío o no
 		palabras.size();// retorna la cantidad de elementos que tiene el set

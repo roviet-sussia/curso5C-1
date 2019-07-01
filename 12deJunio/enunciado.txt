@@ -1,39 +1,35 @@
+Tomar los ejercicios realizados del día 27 de Mayo.
 
-a) Clasifique y organice las carpetas creadas en los puntos 1 (con sólo 4 clases de las 9 que pedí crear) , punto 2, punto 3 y punto 4 de la clase del 27 de mayo usando la palabra package en el encabezado de cada archivo. Y 
+a) 
 
-Ej:
-	Elijo las clases Cama, Alfombra, Mesa, Lámpara. 
+Colocar las sentencias
 
-	------------------------------   ---------------------------------
-	package habitacion;              package habitacion;
-	public class Cama{               public class Alfombra{
-		...                          	...
-	}                                }
-	------------------------------   ---------------------------------
-    
-	------------------------------   ---------------------------------
-	package habitacion;              package habitacion;
-	public class Mesa{               public class Lampara{
-		...                          	...
-	}                                }
-	------------------------------   ---------------------------------
+package habitacion;
+package mochila;
+package personajes;
+package aula;
+
+donde corresponda.
+
+b)
+
+b.1) Viste que en el paquete habitación hay 9 clases?
+Elegí 4 de ellas y hacé que desciendan de una superclase
+que tenga los atributos peso, color y material.
+Qué va a pasar con los atributos que tenían las 4 clases elegidas?
+Es necesario usar super()? Porqué?
 
 
-Nota: a partir de ahora, toda clase deberá ser adecuadamente empaquetada 
-con un nombre declarativo que represente el grupo/subgrupo al que pertenece.
 
-b) 
+b.2) Ahora elegí otras 4 (distintas a las otras 4 elegidas antes) 
+borrarle los constructores. 
+y hacé que éstas tengan una clase descendiente. 
 
-b.1) Dado el mismo conjunto de atributos que tienen las clases creadas para representar la habitación, y el hecho de que la POO se basa en repetir la menor cantidad de código y reusarlo (entre otras cosas), elegir cuatro de ellas (ej: Cama, Alfombra, Mesa, Lámpara) y hacer que desciendan de una clase que contenga aquellos atributos que comparten las cuatro clases elegidas 
-(peso, color y material).
-
-b.2) Elegir otras 4 clases, distintas a las usadas para el ítem a y b (ej: Ventana, Armario, Biblioteca, Silla) y crear una clase derivada (subclase) de 
-cada una de las clases.
-
-Ej: 
+Por ejemplo, si elegiste la clase silla, creá la clase
+sillaMecedora.
 	------------------------------   ---------------------------------
 	package sillas;                  package sillas;
-	public class Silla{              public class SillaMecedora{
+	public class Silla{              public class SillaMecedora extends Silla{
 		/*
 		sin constructores
 		definidos
@@ -42,11 +38,15 @@ Ej:
 	}                                }
 	------------------------------   ---------------------------------
 
-Las 4 clases no deben tener constructores por defecto.
-Las subclases sí deben tener un constructor por defecto y también deben tener
-2 constructores que tengan parámetros. Usar la palabra reservada o cláusula this().
+La clase descendiente sí debe tener constructores: uno sin parámetros
+y dos con parámetros.
 
-b.3) Realizar lo pedido en el ítem b.1 con el punto 2.
+Dónde podrías usar this()?
+Con parámetros o sin parámetros?
+Usarlo donde considere que corresponde.
+
+Es necesario usar super()? Porqué?
+
 
 c) los dos personajes elegidos en el punto 3, tienen alguna relación?
    c.1) Si la tienen, crear una superclase que contenga los atributos y métodos
