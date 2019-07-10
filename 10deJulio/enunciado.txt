@@ -5,13 +5,13 @@ el lenguaje de programación java.
 
 Reglas:
 
-	*) evitar repetir la mayor cantidad de código. 
+	regla 1) evitar repetir la mayor cantidad de código. 
 		Consejo: crear métodos con el código repetido y returilizar el mismo
 			   la cantidad de veces que sea necesario.
 
-	*) Cada método debe tener un sólo objetivo/función.
+	regla 2) Cada método debe tener un sólo objetivo/función.
 
-	*) evitar hacer cosas del tipo 
+	regla 3) evitar hacer cosas del tipo 
 			metodo1().metodo2().metodo3().etc.etc....
 
 		Consejo: podría haber un método que sea del tipo
@@ -21,7 +21,7 @@ Reglas:
 		    	return variable;
 		    }
 
-	*) Si existe un valor tiene un rango determinado (ej, las notas de un exámen son del 1 al 10), colocar un if para que verifique que el valor está en el rango y no se "setee" un valor incorrecto.
+	regla 4) Si existe un valor tiene un rango determinado (ej, las notas de un exámen son del 1 al 10), colocar un if para que verifique que el valor está en el rango y no se "setee" un valor incorrecto.
 
 	Recordar que pueden usar las herramientas vistas en clase.
 	Ustedes eligen qué métodos implementar y qué atributos serán relevantes y no redundantes.
