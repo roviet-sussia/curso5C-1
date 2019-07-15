@@ -1,0 +1,44 @@
+Diseñar es:
+*) encontrar componentes
+*) encontrar sus responsabilidades
+*) encontrar la relación que cada componente tiene con los demás componentes para formar un sistema
+
+Modularidad, cohesión y acoplamiento 
+
+Modularidad:
+Separar un software en partes más pequeñas, para que se puedan diseñar, desarrollar, probar y modificar, lo más independientemente posible del resto de la aplicación.
+
+Tipos de módulos: métodos, clases y paquetes.
+
+Cohesión:
+Tiene que ver con que cada módulo del sistema se refiera a un único proceso.
+
+Una clase es cohesiva si podemos definirle un objetivo claro y puntual.
+Un método es cohesivo si tiene un único objetivo.
+
+ej: 
+	Emitir una factura y calcular el total de facturación está bueno que estén en diferentes métodos.
+
+Alta cohesión:
+A mayor cohesión, mejor: el módulo en cuestión será más sencillo de diseñar, programar, probar y mantener.
+
+Acoplamiento:
+Mide el grado de relación de un módulo con los demás, el grado en que los componentes de un sistema se conocen.
+
+Bajo acoplamiento:
+A menor acoplamiento, mejor: el módulo en cuestión será más sencillo de diseñar, programar, probar y mantener.
+
+Se logra bajo acoplamiento reduciendo las interacciones entre procedimientos y funciones.
+
+Uno de los objetivos es que nuestro sistema sea mantenible a largo plazo.
+Donde en caso de tener que modificar o extender la funcionalidad de una 
+de las partes del software, algo se tenga que hacer en un solo lugar
+y no en varios.
+
+Para ello es necesario mantener alta la cohesión de los objetos
+un nivel de acoplamiento lo suficientemente bajo.
+
+Los conceptos y técnicas que nos ayudarán a lograrlo serán el
+polimorfismo y la delegación.
+
+

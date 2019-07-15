@@ -1,0 +1,3 @@
+dos objetod son polimórficos a la vista de un tercero porque
+pueden enviar el mismo mensaje sin importar su implementación.
+

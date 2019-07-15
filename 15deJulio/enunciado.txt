@@ -1,0 +1,9 @@
+Aplicar los conceptos de modularidad, alta cohesión y
+bajo acoplamiento a la calculadora que realizaron.
+
+nota: a partir de ahora, en lo que resta del año, 
+tendrán que programar teniendo en cuenta los tres conceptos.
+
+Dado que posiblemente tengan que crear nuevos métodos, 
+también deberán testearlos usando Junit.
+
