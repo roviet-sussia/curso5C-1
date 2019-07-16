@@ -3,32 +3,47 @@ Diseñar es:
 *) encontrar sus responsabilidades
 *) encontrar la relación que cada componente tiene con los demás componentes para formar un sistema
 
+-------------------------------------
 Modularidad, cohesión y acoplamiento 
+-------------------------------------
 
+------------
 Modularidad:
+------------
 Separar un software en partes más pequeñas, para que se puedan diseñar, desarrollar, probar y modificar, lo más independientemente posible del resto de la aplicación.
 
 Tipos de módulos: métodos, clases y paquetes.
 
+
+---------
 Cohesión:
+---------
 Tiene que ver con que cada módulo del sistema se refiera a un único proceso.
 
 Una clase es cohesiva si podemos definirle un objetivo claro y puntual.
 Un método es cohesivo si tiene un único objetivo.
 
+
+--------------
+Alta cohesión:
+--------------
+A mayor cohesión, mejor: el módulo en cuestión será más sencillo de diseñar, programar, probar y mantener.
+
 ej: 
 	Emitir una factura y calcular el total de facturación está bueno que estén en diferentes métodos.
 
-Alta cohesión:
-A mayor cohesión, mejor: el módulo en cuestión será más sencillo de diseñar, programar, probar y mantener.
-
+-------------
 Acoplamiento:
+-------------
 Mide el grado de relación de un módulo con los demás, el grado en que los componentes de un sistema se conocen.
 
+
+------------------
 Bajo acoplamiento:
+------------------
 A menor acoplamiento, mejor: el módulo en cuestión será más sencillo de diseñar, programar, probar y mantener.
 
-Se logra bajo acoplamiento reduciendo las interacciones entre procedimientos y funciones.
+Se logra bajo acoplamiento reduciendo las interacciones entre procedimientos y funciones. Es decir, que se reduce la dependencia entre métodos.
 
 Uno de los objetivos es que nuestro sistema sea mantenible a largo plazo.
 Donde en caso de tener que modificar o extender la funcionalidad de una 
@@ -41,4 +56,113 @@ un nivel de acoplamiento lo suficientemente bajo.
 Los conceptos y técnicas que nos ayudarán a lograrlo serán el
 polimorfismo y la delegación.
 
+
+Ej:
+
+public boolean ultimoPlatoEsSopa(int numMesa){
+	boolean esSopa = false;
+	...
+	if (mesas.get(numMesa-1).getPlatos().get(j).getNombre().equals("sopa")){ 
+	
+		esSopa = true;
+	}
+	...
+}
+
+/*
+	se utilizan muchos métodos encadenados y la dependencia
+	de ellos es muy alta (acoplamiento alto). 
+	Metodos usados:
+
+		get(i),
+		getPlatos(),
+		getNombre()
+		equals(...),
+
+	Para aplicar el concepto del bajo acoplamiento, se debe reducir 
+	la interacción de los métodos entre ellos.
+	Es decir, que no debe utilizar tantos en su implementación.
+	Para ello, se sugiere crear nuevos métodos que realicen algunas
+	de las tareas que hace y haga el llamado los mismo al necesitarlo.
+	Con tales cambios, los nuevos métodos también podrían ser usados por otros métodos en caso de ser necesario.
+	
+	ej:
+
+		mesas.get(numMesa-1).getPlatos().get(j).getNombre()
+		podría ser reemplazado por un método llamado "nombreDeUltimoPlato"
+
+
+
+
+
+		public boolean ultimoPlatoEsSopa(int numMesa){
+			boolean esSopa = false;
+			...
+			if (mesas.get(numMesa-1).getPlatos().get(j).getNombre().equals("sopa")){
+				esSopa = true;
+			}
+			...
+		}
+
+		Bajamos el acoplamiento...
+
+		public String nombreDeUltimoPlato(int numMesa){
+			...
+			mesas.get(numMesa-1).getPlatos().get(j).getNombre();
+			...
+		}
+
+		lo bajamos más...
+		
+		public Plato ultimoPlato(int numMesa){
+			...
+			mesas.get(numMesa-1).getPlatos().get(j);
+			...
+		}
+
+		lo bajamos aún más...
+
+		public ArrayList<Platos> platosDeMesa(int numMesa){
+			...
+			mesas.get(numMesa-1).getPlatos();
+			...
+		}
+
+		Hay que bajarlo pero no hacerlo desaparecer.
+
+----------------------------------------------------------------------------------
+		
+		Y queda así:
+
+
+		public boolean ultimoPlatoEsSopa(int numMesa){
+			boolean esSopa = false;
+			...
+			if (mesa.nombreUltimoPlato().equals("sopa")){
+			esSopa = true;
+			}
+			...
+		}
+
+		public String nombreDeUltimoPlato(int numMesa){
+			...
+			return mesas.ultimoPlato(numMesa).getNombre();
+		}
+
+
+		public Plato ultimoPlato(int numMesa){
+			...
+			ultimoPlato = mesas.platosDeMesa(numMesa).get(j);
+
+			return ultimoPlato;
+		}
+
+		public ArrayList<Platos> platosDeMesa(int numMesa){
+			...
+			return mesas.get(numMesa-1).getPlatos();
+		}
+
+
+
+*/
 

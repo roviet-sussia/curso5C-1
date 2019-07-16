@@ -1,3 +1,163 @@
-dos objetod son polimórficos a la vista de un tercero porque
+
+
+Existen diferentes aspectos del polimorfismo en la POO
+*) Objeto poliformo
+*) Métodos virtuales
+*) “this” polimorfo
+
+Jerarquía de clases:
+Object --> Persona --> Estudiante
+
+-------------------
+Objetos polimorfos:
+-------------------
+Son aquellos con la apacidad de poder referenciar a un objeto 
+de distinto tipo (tipos compatibles)
+
+
+Object o1 = new Persona();
+//o1 guarda una referencia a un objeto de tipo Persona.
+//acá referenciamos a una persona con un objeto de tipo Object
+
+Object o2 = new Estudiante();
+//o2 guarda un referencia a un objeto de tipo Estudiante.
+//acá referenciamos a un estudiante con un objeto de tipo Object
+
+
+Persona p1 = new Estudiante();
+//p1 guarda una referencia a un objeto de tipo Estudiante.
+//acá referenciamos a un estudiante con un objeto de tipo Persona
+
+tanto como o1, o2 y p1 pueden ser tratados de diferentes formas
+según la referencia que guarda. Ellos son objetos polimorfos.
+
+Las super clases puden almacenar referencias correspondientes
+a algunas de sus subclases.
+
+Éste tipo de conversión se llama "conversión implicita".
+Transformamos un objeto a un tipo compatible.
+
+Una subclase no puede almacenar una referencia
+de su super clase.
+
+// Persona p = (Persona) new Object(); //no se puede
+Pero si puede transformar tipos de variables con referencias
+del tipo a cambiar.
+
+Object o1 = new Persona();
+Persona p = (Persona) o1;
+//ésta linea, durante la ejecución, chequea que o1
+// contenga una referencia de tipo Persona. Si
+// efectivamente la tiene, se procede a asignarla en p.
+
+
+Conversiones implícitas
+	Se pasa de un tipo más específico a un general
+	ej: de Estudiante a Object 
+
+Conversiones explícitas 
+	Se pasa de un tipo general a uno más específico
+	ej: de Object a Estudiante
+
+
+public class ObjetoGráfico {
+    Point origen;
+
+    public void mover(int x, int y) { 
+		this.origen.x = x;
+		this.origen.y = y;
+		this.dibujar();
+    }
+
+    public void dibujar() {
+			System.out.println(“Dibujo un objeto gráfico”);
+    }
+
+    public void redimensionar() {
+			System.out.println(“Redimensiono un objeto gráfico”);
+    }
+
+}
+
+public class Circulo extends GraphicObject {
+    public void dibujar() {
+        System.out.println("Dibujo Círculo");
+    }
+    public void redimensionar() {
+        ...
+    }
+}
+
+public class Rectangulo extends GraphicObject {
+
+    public void dibujar() {
+        System.out.println("Dibujo Rectángulo");
+    }
+
+    public void redimensionar() {
+        ...
+    }
+}
+-------------------------------------------------------
+ObjetoGrafico grafico;
+grafico = new Rectangulo ();
+grafico.mover (0,0);
+-------------------------------------------------------
+
+Como no se redefinió el método mover dentro de la clase Rectangulo, él método que se invoca es aquel definido en la clase ObjetoGrafico
+Si lo hubiese redefinido se hubiese invocado el método redefinido.
+
+------------------------------------------
+public void mover(int x, int y) { 
+	this.origen.x = x;
+	this.origen.y = y;
+	this.dibujar();
+}
+-------------------------------------------
+
+Estudiante est = new Estudiante ();
+Persona per = estudiante;
+persona.imprimirAtributos();
+
+Dos objetos son polimórficos a la vista de un tercero porque
 pueden enviar el mismo mensaje sin importar su implementación.
+
+--------------------------------------------
+
+ObjetoGrafico[] graficos = new ObjetoGrafico[3]; 
+graficos[0] = new Rectangulo ();
+graficos[1] = new Circulo ();
+graficos[2] = new Bezier ();
+
+
+for (int i = 0; i < graficos.length; i++) {
+	graficos[i].mover (0,0);
+}
+
+
+public void mover(int x, int y) { 
+	this.origen.x = x;
+	this.oriten.y = y;
+	this.dibujar();
+}
+
+
+Primero se puede almacenar en un arreglo de ObjetoGrafico referencias a objetos de subclases (Objeto Polimórfico)
+
+Segundo cuando invoco el método mover, se invoca el método que corresponde al tipo objeto que realmente estoy referenciando (Método Virtual)
+
+En este caso se ejecuta el método definido en la clase ObjetoGráfico porque no esta redefinido, pero si lo estuviera se ejecutaría el redefinido.
+El tercer aspecto está en el atributo this, que referencia al objeto cuyo método se esta ejecutando (this polimórfico)
+
+
+En un arreglo de elmentos de tipo Figura se pueden almacenar referencias a objetos de subclases. Es decir que el arreglo es un objeto polimorfico.
+
+Segundo cuando invoco el método mover, se invoca el método que corresponde al tipo objeto que realmente estoy referenciando (Método Virtual)
+
+En este caso se ejecuta el método definido en la clase ObjetoGráfico porque no esta redefinido, pero si lo estuviera se ejecutaría el redefinido.
+El tercer aspecto está en el atributo this, que referencia al objeto cuyo método se esta ejecutando (this polimórfico)
+
+
+    1) En una casa de sándwiches actualmente calculan el costo de cada producto a ojo. Se necesita crear un software que permita elegir entre varios fiambres disponibles, agregarlos al sándwich en preparación, y que a medida que el proceso continúa se calcula el precio final del mismo. Considerar que deberá existir un precio base, y cada fiambre tendrá un precio individual.
+
 
