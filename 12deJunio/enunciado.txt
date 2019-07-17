@@ -1,35 +1,39 @@
-Tomar los ejercicios realizados del día 27 de Mayo.
 
-a) 
+a) Clasifique y organice las carpetas creadas en los puntos 1 (con sólo 4 clases de las 9 que pedí crear) , punto 2, punto 3 y punto 4 de la clase del 27 de mayo usando la palabra package en el encabezado de cada archivo. Y 
 
-Colocar las sentencias
+Ej:
+	Elijo las clases Cama, Alfombra, Mesa, Lámpara. 
 
-package habitacion;
-package mochila;
-package personajes;
-package aula;
-
-donde corresponda.
-
-b)
-
-b.1) Viste que en el paquete habitación hay 9 clases?
-Elegí 4 de ellas y hacé que desciendan de una superclase
-que tenga los atributos peso, color y material.
-Qué va a pasar con los atributos que tenían las 4 clases elegidas?
-Es necesario usar super()? Porqué?
-
+	------------------------------   ---------------------------------
+	package habitacion;              package habitacion;
+	public class Cama{               public class Alfombra{
+		...                          	...
+	}                                }
+	------------------------------   ---------------------------------
+    
+	------------------------------   ---------------------------------
+	package habitacion;              package habitacion;
+	public class Mesa{               public class Lampara{
+		...                          	...
+	}                                }
+	------------------------------   ---------------------------------
 
 
-b.2) Ahora elegí otras 4 (distintas a las otras 4 elegidas antes) 
-borrarle los constructores. 
-y hacé que éstas tengan una clase descendiente. 
+Nota: a partir de ahora, toda clase deberá ser adecuadamente empaquetada 
+con un nombre declarativo que represente el grupo/subgrupo al que pertenece.
 
-Por ejemplo, si elegiste la clase silla, creá la clase
-sillaMecedora.
+b) 
+
+b.1) Dado el mismo conjunto de atributos que tienen las clases creadas para representar la habitación, y el hecho de que la POO se basa en repetir la menor cantidad de código y reusarlo (entre otras cosas), elegir cuatro de ellas (ej: Cama, Alfombra, Mesa, Lámpara) y hacer que desciendan de una clase que contenga aquellos atributos que comparten las cuatro clases elegidas 
+(peso, color y material).
+
+b.2) Elegir otras 4 clases, distintas a las usadas para el ítem a y b (ej: Ventana, Armario, Biblioteca, Silla) y crear una clase derivada (subclase) de 
+cada una de las clases.
+
+Ej: 
 	------------------------------   ---------------------------------
 	package sillas;                  package sillas;
-	public class Silla{              public class SillaMecedora extends Silla{
+	public class Silla{              public class SillaMecedora{
 		/*
 		sin constructores
 		definidos
@@ -38,15 +42,11 @@ sillaMecedora.
 	}                                }
 	------------------------------   ---------------------------------
 
-La clase descendiente sí debe tener constructores: uno sin parámetros
-y dos con parámetros.
+Las 4 clases no deben tener constructores por defecto.
+Las subclases sí deben tener un constructor por defecto y también deben tener
+2 constructores que tengan parámetros. Usar la palabra reservada o cláusula this().
 
-Dónde podrías usar this()?
-Con parámetros o sin parámetros?
-Usarlo donde considere que corresponde.
-
-Es necesario usar super()? Porqué?
-
+b.3) Realizar lo pedido en el ítem b.1 con el punto 2.
 
 c) los dos personajes elegidos en el punto 3, tienen alguna relación?
    c.1) Si la tienen, crear una superclase que contenga los atributos y métodos
@@ -54,4 +54,4 @@ c) los dos personajes elegidos en el punto 3, tienen alguna relación?
    c.2) Si no la tienen, crear un personaje más que tenga algún tipo de relación con uno de los personajes elegidos y hacer lo pedido en el ítem c.1
 
 d) Diseñe una jerarquía de clases. En la raíz de la jerarquía (clase Bicicleta) defina un método imprimirAtributos que muestre por consola los atributos de lo que es una bicicleta.
-En las subclases (MontainBike y Playera) redefina el método imprimirAtributos de forma tal que se impriman los atributos base que hereda y además los que adicionan, para esto reutilice el método imprimirAtributos definido en la clase base mediante el uso de la palabra reservada super.
+En las subclases (MountainBike y Playera) redefina el método imprimirAtributos de forma tal que se impriman los atributos base que hereda y además los que adicionan, para esto reutilice el método imprimirAtributos definido en la clase base mediante el uso de la palabra reservada super.
