@@ -1,0 +1,24 @@
+
+-----------
+Ejercicios:
+-----------
+
+1) Crear clase/s para registrar pedidos de cuadernos de 3 tipos:
+	cuaderno con 24 hojas
+	cuaderno con 48 hojas
+	cuaderno con 98 hojas
+
+2) Crear una interfaz que determine el comportamiento
+   de un medios de trasporte.
+   Tener en cuenta que existen medios aéreos y no aéreos.
+   Recordar que existe la herencia de interfaces.
+
+3) En una casa de sándwiches actualmente calculan el costo de cada producto a ojo. 
+Para mejorar ello, entre otras cosas, se necesita crear un software que:
+	*) permita elegir entre varios fiambres disponibles
+	*) agregarlos al sándwich en preparación
+	*) y que a medida que el proceso continúa se calcula el precio final del mismo
+Considerar que deberá existir un precio base, y cada fiambre tendrá un precio individual.
+
+
+
